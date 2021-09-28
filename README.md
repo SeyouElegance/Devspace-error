@@ -122,8 +122,6 @@ devspace run varnish.purge
 </details>
 
 <br />
-<br />
-
 
 # Useful commands
 <details>
