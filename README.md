@@ -121,6 +121,23 @@ devspace run varnish.purge
   ```
 </details>
 
+<details>
+   <summary>Waiting for pods...</summary>
+  
+  ```bash
+    VOIR AVEC NICOLAS(OP-RATE) PROBLEME DE LE VOLUME
+  ```
+</details>
+
+<details>
+   <summary>start sync: unable to start sync: initial sync: upstream: apply changes: apply creates: upload archive: after upload: rpc error: code = Unknown desc = untar all: decompress: create /var/www/html/.git: open /var/www/html/.git: is a directory</summary>
+  
+  ```bash
+    LANCER LA COMMANDE DEVSPACE DEV DEPUIS UN AUTRE TERMINAL QUE CELUI DE VSCODE
+  ```
+</details>
+
+
 <br />
 
 # Useful commands
