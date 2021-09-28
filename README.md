@@ -124,12 +124,6 @@ devspace run varnish.purge
   ```
 </details>
 
-<details>
-   <summary>My namespace is exiting already?</summary>
-  ```bash
-    devspace use namespace
-  ```
-</details>
 
 
 # Useful commands
