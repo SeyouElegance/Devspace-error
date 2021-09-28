@@ -17,7 +17,7 @@ Download 2.17.0
 </details>
 
 <details>
-## Usage
+   <summary>Usage</summary>
 
 ### First time
 
