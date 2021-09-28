@@ -1,4 +1,4 @@
-# Devspace-error
+# DOCUMENTATION DEVSPACE
 
 <details>
   <summary>Installation</summary>
@@ -17,7 +17,7 @@
 
 <details>
   
-   <summary>HOW CAN I USE IT NOW ?</summary>
+   <summary>Use it now</summary>
 
 <br />
 
@@ -101,36 +101,45 @@ devspace run varnish.purge
 ```
 </details>
 
-### Useful commands
+# FAQ DEVSPACE
 
+<details>
+   <summary>Problem with your certificat ?</summary>
+  ```bash
+    kubectl delete ns dev-yourname
+  ```
+</details>
+
+<details>
+   <summary>How to see if my namespace is existing already?</summary>
+  ```bash
+    devspace use namespace
+  ```
+</details>
+
+<details>
+   <summary>My namespace is exiting already?</summary>
+  ```bash
+    devspace use namespace
+  ```
+</details>
+
+<details>
+   <summary>My namespace is exiting already?</summary>
+  ```bash
+    devspace use namespace
+  ```
+</details>
+
+
+# Useful commands
+<details>
+   <summary>See More</summary>
 * `devspace enter` will open a shell in the selected container
 * `devspace open` will create a port-forward from the cluster to your local machine, useful if you don't need an ingress to test your application
 * `devspace ui` will deploy the web interface (also deployed when running in dev mode)
 * `devspace logs` will retrieve the container logs (use the `-f` flag to stream it)
 * `devspace list vars` will display the current variables and their values used in `devspace.yaml`
 * `devspace reset vars` will reset the variables to their original value
-<br />
-<br />
-
-
-
-
-**ERRORS GOT IT WITH DEVSPACE:**
-
-<details>
-   <summary>Problem with your certificat ?</summary>
-  ```bash
-    jubectl delete ns dev-yourname
-  ```
-</details>
-
-<br />
-<br />
-
-<details>
-   <summary>Problem with your certificat ?</summary>
-  ```bash
-    jubectl delete ns dev-yourname
-  ```
-</details>
+<details />
 
