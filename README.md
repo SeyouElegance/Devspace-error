@@ -3,12 +3,11 @@
 <details>
   <summary>Installation</summary>
   
-  ## Heading
-Installation helm on Ubuntu :
-Install devspace CLI (v5.15)
-Ensure you have docker, helm (v2.17.0) and kubectl installed on your machine
-
-Download 2.17.0
+  ## Installation on Ubuntu  
+* Install [devspace CLI](https://devspace.sh/cli/docs/quickstart#1-download-cli) (v5.15)
+* Ensure you have docker, helm (v2.17.0) and kubectl installed on your machine
+  ## DETAILS Installation on Ubuntu
+* [Download 2.17.0](https://get.helm.sh/helm-v2.17.0-linux-amd64.tar.gz)
 -> Extract here
 -> On terminal access to last folder of helm downloaded file
 -> which helm
@@ -17,7 +16,7 @@ Download 2.17.0
 </details>
 
 <details>
-   <summary>Usage</summary>
+   <summary>HOW CAN I USE IT NOW ?</summary>
 
 ### First time
 
@@ -27,7 +26,7 @@ If this is the first time you start devspace, run the following command to tell 
 devspace use namespace my-namespace
 ```
 
-### Deploy the application
+### Deploy the applicationsudo vim /etc/hosts
 
 All devspace commands must be run at the root of the folder.
 
@@ -40,7 +39,7 @@ devspace deploy
 ### Update your hosts file for the new ingress(es)
 
 When creating ingresses, you need to update your hosts file to map the custom domain(s) with the Ingress Controller Nginx IP, `34.79.192.20`.
-
+DO IT => sudo vim /etc/hosts => CHANGE YOUR IP INGRESS HERE
 Example for the Varnish ingress:
 ```
 34.79.192.20 dev-yourname.laprovence.com dev-yourname-www.laprovence.com dev-yourname-api.laprovence.com dev-yourname-abonnement.laprovence.com
@@ -55,7 +54,6 @@ To start your application in dev mode and use the hot-reloading feature, run the
 ```bash
 devspace dev
 ```
-
 It will deploy your application and its dependencies, then open a shell in the running container. You can now update your files locally and the changes will be reflected inside the container.
 
 ### Delete the application
@@ -104,6 +102,10 @@ devspace run varnish.purge
 * `devspace logs` will retrieve the container logs (use the `-f` flag to stream it)
 * `devspace list vars` will display the current variables and their values used in `devspace.yaml`
 * `devspace reset vars` will reset the variables to their original value
+<br />
+<br />
+<br />
+<br /><br />
 
 
 
