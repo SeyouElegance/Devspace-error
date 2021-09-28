@@ -16,20 +16,20 @@
 </details>
 
 <details>
+  
    <summary>HOW CAN I USE IT NOW ?</summary>
-<br />
-<br />
-### First time
 
+<br />
+
+### First time
 If this is the first time you start devspace, run the following command to tell devspace which namespace you prefer to use:
 
 ```bash
 devspace use namespace my-namespace
 ```
 <br />
-<br />
-### Deploy the applicationsudo vim /etc/hosts
 
+### Deploy the applicationsudo vim /etc/hosts
 All devspace commands must be run at the root of the folder.
 
 To deploy your application, run the following command:
@@ -38,7 +38,7 @@ To deploy your application, run the following command:
 devspace deploy
 ```
 <br />
-<br />
+
 ### Update your hosts file for the new ingress(es)
 
 When creating ingresses, you need to update your hosts file to map the custom domain(s) with the Ingress Controller Nginx IP, `34.79.192.20`.
@@ -48,7 +48,7 @@ Example for the Varnish ingress:
 34.79.192.20 dev-yourname.laprovence.com dev-yourname-www.laprovence.com dev-yourname-api.laprovence.com dev-yourname-abonnement.laprovence.com
 ```
 <br />
-<br />
+
 ### Use the dev mode with hot-reloading
 
 To start your application in dev mode and use the hot-reloading feature, run the following command:
@@ -57,23 +57,24 @@ To start your application in dev mode and use the hot-reloading feature, run the
 devspace dev
 ```
 It will deploy your application and its dependencies, then open a shell in the running container. You can now update your files locally and the changes will be reflected inside the container.
+
 <br />
-<br />
+
 ### Delete the application
 
-To delete the deployment, run the following command:
+- To delete the deployment, run the following command:
 
 ```bash
 devspace purge
 ```
 
-If your deployment contains dependencies (e.g.: varnish) or if you want to fully clean your environment, run the following command to delete everything:
+- If your deployment contains dependencies (e.g.: varnish) or if you want to fully clean your environment, run the following command to delete everything:
 
 ```bash
 devspace purge -a
 ```
 <br />
-<br />
+  
 ### Deploy without Varnish
 
 To deploy your application without Varnish, simply comment the following block in the `devspace.yaml` configuration file:
@@ -88,8 +89,8 @@ dependencies:
     - name: backend_api
       value: api
 ```
-<br />
-<br />
+<br />  
+
 ### Clear Varnish cache
 
 If you deploy the application with Varnish as a dependency (default behavior), you can run the following command to clear its cache:
@@ -98,8 +99,7 @@ If you deploy the application with Varnish as a dependency (default behavior), y
 devspace run varnish.purge
 ```
 </details>
-<br />
-<br />
+
 ### Useful commands
 
 * `devspace enter` will open a shell in the selected container
