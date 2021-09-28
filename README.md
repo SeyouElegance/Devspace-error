@@ -105,6 +105,7 @@ devspace run varnish.purge
 
 <details>
    <summary>Problem with your certificat ?</summary>
+  
   ```bash
     kubectl delete ns dev-yourname
   ```
@@ -112,6 +113,7 @@ devspace run varnish.purge
 
 <details>
    <summary>How to see if my namespace is existing already?</summary>
+  
   ```bash
     devspace use namespace
   ```
@@ -119,6 +121,7 @@ devspace run varnish.purge
 
 <details>
    <summary>My namespace is exiting already?</summary>
+  
   ```bash
     devspace use namespace
   ```
