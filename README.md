@@ -17,16 +17,20 @@
 
 <details>
    <summary>HOW CAN I USE IT NOW ?</summary>
-
-### First time
+  
+<details>
+  <summary>First time</summary>
 
 If this is the first time you start devspace, run the following command to tell devspace which namespace you prefer to use:
 
 ```bash
 devspace use namespace my-namespace
 ```
+  </details>
 
-### Deploy the applicationsudo vim /etc/hosts
+    
+<details>
+  <summary>Deploy the applicationsudo vim /etc/hosts</summary>
 
 All devspace commands must be run at the root of the folder.
 
@@ -35,19 +39,22 @@ To deploy your application, run the following command:
 ```bash
 devspace deploy
 ```
+  </details>
 
-### Update your hosts file for the new ingress(es)
+    
+<details>
+  <summary>Update your hosts file for the new ingress(es)</summary>
 
 When creating ingresses, you need to update your hosts file to map the custom domain(s) with the Ingress Controller Nginx IP, `34.79.192.20`.
-DO IT => sudo vim /etc/hosts => CHANGE YOUR IP INGRESS HERE
+DO IT => sudo vim /etc/hosts => CHANGE YOUR IP INGRESS HERE (You can retrieve the URLs from the GCP Console)
 Example for the Varnish ingress:
 ```
 34.79.192.20 dev-yourname.laprovence.com dev-yourname-www.laprovence.com dev-yourname-api.laprovence.com dev-yourname-abonnement.laprovence.com
 ```
-
-You can retrieve the URLs from the GCP Console
-
-### Use the dev mode with hot-reloading
+</details>
+ 
+<details>
+  <summary>Use the dev mode with hot-reloading</summary>
 
 To start your application in dev mode and use the hot-reloading feature, run the following command:
 
@@ -55,6 +62,7 @@ To start your application in dev mode and use the hot-reloading feature, run the
 devspace dev
 ```
 It will deploy your application and its dependencies, then open a shell in the running container. You can now update your files locally and the changes will be reflected inside the container.
+  </details>
 
 ### Delete the application
 
