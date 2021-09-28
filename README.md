@@ -101,7 +101,7 @@ devspace run varnish.purge
 ```
 </details>
 
-# FAQ DEVSPACE
+# FAQ
 
 <details>
    <summary>Problem with your certificat ?</summary>
