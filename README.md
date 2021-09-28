@@ -89,6 +89,7 @@ dependencies:
     - name: backend_api
       value: api
 ```
+
 <br />  
 
 ### Clear Varnish cache
@@ -114,6 +115,22 @@ devspace run varnish.purge
 
 
 
-**Two important rules:**
-1. Make sure you have an **empty line** after the closing `</summary>` tag, otherwise the markdown/code blocks won't show correctly.
-2. Make sure you have an **empty line** after the closing `</details>` tag if you have multiple collapsible sections.
+**ERRORS GOT IT WITH DEVSPACE:**
+
+<details>
+   <summary>Problem with your certificat ?</summary>
+  ```bash
+    jubectl delete ns dev-yourname
+  ```
+</details>
+
+<br />
+<br />
+
+<details>
+   <summary>Problem with your certificat ?</summary>
+  ```bash
+    jubectl delete ns dev-yourname
+  ```
+</details>
+
