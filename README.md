@@ -137,6 +137,14 @@ devspace run varnish.purge
   ```
 </details>
 
+<details>
+  <summary>
+deploy dependencies: Deploy dependency varnish error : error building image eu.gcr.io/la-provence-develop/lp-varnish:dev-nadia-8443a97f: The command '/bin/sh -c wget https://varnish-cache.org/_downloads/ce820265a5403ff564d62b2651705460/varnish-4.1.9.tgz   && tar zxf varnish-4.1.9.tgz     && cd varnish-4.1.9   && bash configure    && make  && make install         && ldconfig   && rm -rf ../varnish-4.1.9.tgz ../varnish-4.1.9       && cd ../    && wget https://package.datadome.co/linux/DataDome-Varnish-latest.tgz  && tar zxf DataDome-Varnish-latest.tgz     && cd DataDome-VarnishDome-*     && bash autogen.sh    && bash configure    && make  && make install         && rm -rf ../DataDome-Varnish-latest.tgz ../DataDome-VarnishDome-*' returned a non-zero code: 8</summary>
+  
+    ```bash
+    LANCER LA COMMANDE devspace purge -a et redeploy et dev 
+  ```
+</details>
 
 <br />
 
