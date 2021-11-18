@@ -107,9 +107,9 @@ devspace run varnish.purge
 
 ### JS
 
-sudo apt install clang make ruby ruby-dev libffi-dev
-sudo gem install ffi
-sudo gem install compass:1.0.3
+sudo apt install clang make ruby ruby-dev libffi-dev <br />
+sudo gem install ffi <br />
+sudo gem install compass:1.0.3 <br />
 
 npm install && npm run webpack --watch
 
