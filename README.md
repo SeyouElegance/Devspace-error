@@ -103,17 +103,35 @@ devspace run varnish.purge
 
 <br />
 
-#Abo
+### ABONNEMENT
 
-### JS
+```bash
+sudo apt install clang make ruby ruby-dev libffi-dev
+```
 
-sudo apt install clang make ruby ruby-dev libffi-dev <br />
-sudo gem install ffi <br />
-sudo gem install compass:1.0.3 <br />
+```bash
+sudo gem install ffi 
+```
 
+```bash
+sudo gem install compass:1.0.3
+```
+
+```bash
 npm install && npm run webpack --watch
+```
 
-<br />  
+
+### DESK et MOBI
+```bash
+npm install --save-dev && sass --compass --style compressed -f --update statics/styles/sass/:statics/styles/css/ \
+ && gulp default 
+```
+
+```bash
+sass --compass --style compressed -f --update statics/styles/sass/:statics/styles/css/ 
+```
+
 
 
 
