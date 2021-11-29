@@ -131,7 +131,8 @@ npm install --save-dev && sass --compass --style compressed -f --update statics/
 ```
 
 ```bash
-sass --compass --style compressed -f --update statics/styles/sass/:statics/styles/css/ 
+sass --compass --style compressed --watch statics/styles/sass/:statics/styles/css/ (Pour css)
+gulp default:watch (Pour js)
 ```
 
 
