@@ -120,7 +120,19 @@ sudo gem install compass:1.0.3
 ```
 
 ```bash
-npm install && npm run webpack --watch
+nvm install lts/gallium
+```
+
+```bash
+nvm use lts/gallium
+```
+
+```bash
+npm ci
+```
+
+```bash
+npm run webpack --watch
 ```
 
 
