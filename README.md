@@ -194,5 +194,12 @@ deploy dependencies: Deploy dependency varnish error : error building image eu.g
  ```
 </details>
 
+<details>
+   <summary>[0:sync] DevSpace is waiting, because Pod dev-nadia/desktop-dc7b98db5-bb9s5 has status: Pending</summary>
+  
+  ```bash
+    LANCER LA COMMANDE kubectl delete ns dev-NomDeTonEspace
+  ```
+</details>
 
 
